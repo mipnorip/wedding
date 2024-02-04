@@ -1,0 +1,46 @@
+version: '3'
+services:
+#---backend---
+  redis:
+    image: redis:latest
+    networks:
+      - backend
+
+  celery:
+    build:
+      context: ./celery
+      dockerfile: Dockerfile
+    command: celery -A main worker --loglevel=info
+    depends_on:
+      - redis
+    networks:
+      - backend
+    environment:
+      - CELERY_BROKER_URL=redis://redis:6379/0
+      - CELERY_RESULT_BACKEND=redis://redis:6379/0
+
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    depends_on:
+      - celery
+    networks:
+      - backend
+
+#---frontend---
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    ports:
+      - "80:80"
+    depends_on:
+      - backend
+    networks:
+      - backend
+      - frontend
+
+networks:
+  frontend:
+  backend:

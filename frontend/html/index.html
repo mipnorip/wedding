@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- css -->
+    
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/index.css">
+
+    <!-- js -->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="https://rawgit.com/RobinHerbots/Inputmask/5.x/dist/jquery.inputmask.min.js"></script>
+
+
+    <!-- aos -->
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="headerContent">
+                <div class="headerTitle" data-aos="fade-right">
+                    <h1>Максим<br>
+                        и<br>
+                        Татьяна</h1>
+
+                    <p>«Приглашаем вас на нашу свадьбу! Присоединяйтесь к нам в этот особый день, исполненный любви и радости. Будем рады видеть вас рядом с нами!»</p>
+                </div>
+
+                <div class="headerImg" data-aos="fade-left">
+                    <img src="img/header/bg.png" alt="">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- wait -->
+
+    <section class="wait"  data-aos="fade-up">
+        <div class="container">
+            <div class="waitContent">
+                <h2>Будем ждать вас <span>26.04.2024</span> <br> В <span>15:30</span> по адресу: Губернская <span>66.</span></h2>
+            </div>
+        </div>
+    </section>
+
+    <!-- schedule -->
+
+    <section class="schedule" data-aos="fade-up">
+        <div class="container">
+            <div class="scheduleContainer">
+                <div class="scheduleItem">
+                    <h2>15:30</h2>
+                    <h3>Сбор гостей</h3>
+    
+                    <div class="scheduleItemBr"></div>
+    
+                    <p>Начало незабываемого дня, наполненного любовью и радостью!</p>
+                </div>
+
+                <div class="scheduleItem">
+                    <h2>16:00</h2>
+                    <h3>Торжественная церемония</h3>
+    
+                    <div class="scheduleItemBr"></div>
+    
+                    <p>Трогательная часть, где мы собираемся сказать друг другу “да!”.
+                        Поддержите нас яркими эмоциями и аплодисментами </p>
+                </div>
+
+                <div class="scheduleItem">
+                    <h2>17:00</h2>
+                    <h3>Банкетная часть</h3>
+    
+                    <div class="scheduleItemBr"></div>
+    
+                    <p>Приносите с собой веселье и радость в душе, а подарки – в конверте!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="palette">
+        <div class="container">
+            <div class="paletteContent"  data-aos="fade">
+                <h2>Будем признательны,<br> если поддержите палитру<br> нашей свадьбы</h2>
+
+                <div class="paletteContainer">
+                    <div class="paletteItem pi1" data-aos="fade-right"></div>
+                    <div class="paletteItem pi2" data-aos="fade"></div>
+                    <div class="paletteItem pi3" data-aos="fade-left"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="gallery">
+        <div class="container">
+            <div class="galleryContent">
+                <div class="galleryItem">
+                    <img src="img/gallery/img1.jpg" alt="" data-aos="fade-right">
+                </div>
+
+                <div class="galleryItem">
+                    <img src="img/gallery/img2.jpg" alt="" data-aos="fade-left">
+                </div>
+
+                <div class="galleryItem">
+                    <img src="img/gallery/img3.jpg" alt="" data-aos="fade-right">
+                </div>
+
+                <div class="galleryItem">
+                    <img src="img/gallery/img4.jpg" alt="" data-aos="fade-left">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footerTop">
+            <div class="container">
+                <div class="footerContent">
+                    <form id="form" class="footerForm" data-aos="fade-right">
+                        <h2>Обратная связь</h2>
+
+                        <input type="text" name="name" class="input" placeholder="Имя" id="nameInput">
+                        <input type="text" name="phone" class="input" id="phoneInput" placeholder="Номер телефона ">
+                        <input type="submit" name="submit" class="submit" id="submit" value="Отправить">
+                    </form>
+
+                    <div class="footerMap" data-aos="fade-left">
+                        <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A15989b7631a4bc38daa7e1154acfc345a53204ca323e229b4a117870eb427417&amp;width=100%&amp;height=100%&amp;lang=ru_RU&amp;scroll=true"></script>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footerBottom">
+            <p>Пожалуйста, подтвердите своё присутствие</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/form.js"></script>
+</body>
+</html>
